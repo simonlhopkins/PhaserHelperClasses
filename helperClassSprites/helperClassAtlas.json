@@ -1,0 +1,52 @@
+{"frames": [
+
+{
+	"filename": "ball.png",
+	"frame": {"x":130,"y":348,"w":20,"h":20},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":20,"h":20},
+	"sourceSize": {"w":20,"h":20}
+},
+{
+	"filename": "ball_blue.png",
+	"frame": {"x":130,"y":128,"w":110,"h":108},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":8,"w":110,"h":108},
+	"sourceSize": {"w":125,"h":125}
+},
+{
+	"filename": "ball_blue_high.png",
+	"frame": {"x":130,"y":1,"w":125,"h":125},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":125,"h":125},
+	"sourceSize": {"w":125,"h":125}
+},
+{
+	"filename": "ball_white.png",
+	"frame": {"x":130,"y":238,"w":110,"h":108},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":8,"w":110,"h":108},
+	"sourceSize": {"w":125,"h":125}
+},
+{
+	"filename": "helperClassAtlas.png",
+	"frame": {"x":1,"y":1,"w":127,"h":369},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":369},
+	"sourceSize": {"w":127,"h":369}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "helperClassAtlas.png",
+	"format": "RGBA8888",
+	"size": {"w":256,"h":371},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:cf5bd633100e0618bc4fad2c23edccc8:7fc80276da7a05cd770607354dee6d4b:d8c2a7cc925e77b59cf0e137e35d9fe2$"
+}
+}
