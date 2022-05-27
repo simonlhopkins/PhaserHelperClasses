@@ -46,8 +46,8 @@
           "setAll": [],
           "children": [
             {
-              "type": "atlas-sprite",
-              "id": "f7aab79b-68e8-4b59-91ce-ba82f2f85f66",
+              "type": "image",
+              "id": "974421f3-bb32-41fb-a600-f108942af2c6",
               "asset": "0",
               "info": {
                 "editorName": "_emptySprite",
@@ -57,8 +57,8 @@
               }
             },
             {
-              "type": "atlas-sprite",
-              "id": "fc5851a7-e754-466e-9ec0-3a10941160ff",
+              "type": "image",
+              "id": "24069677-3309-407f-9fc6-ed024c3991f8",
               "asset": "0",
               "info": {
                 "editorName": "_emptyGlowSprite",
@@ -68,8 +68,8 @@
               }
             },
             {
-              "type": "atlas-sprite",
-              "id": "73d36ee0-3abc-4d53-8ac2-7242dc275c48",
+              "type": "image",
+              "id": "7ec606a6-228d-493b-9fb1-7940504ccce1",
               "asset": "0",
               "info": {
                 "editorName": "_lightGraySprite",
@@ -80,7 +80,7 @@
             },
             {
               "type": "atlas-sprite",
-              "id": "e3be7984-c214-4520-a1f4-cd5cab11cd1f",
+              "id": "bd840cc1-06cd-4ddc-a9c5-d5b994c4964d",
               "asset": "1",
               "info": {
                 "editorName": "_graySprite",
@@ -91,7 +91,7 @@
             },
             {
               "type": "atlas-sprite",
-              "id": "5ad0b221-7840-48b2-ba02-5bfc59f81b09",
+              "id": "7f80a1c1-a62f-4302-beb8-4794b6669aaa",
               "asset": "2",
               "info": {
                 "editorName": "_greenSprite",
@@ -102,7 +102,7 @@
             },
             {
               "type": "atlas-sprite",
-              "id": "e384cccb-7de3-4491-bffd-a6483701e14c",
+              "id": "bb4d76e2-cf59-43f6-b206-feaf3eb47f02",
               "asset": "3",
               "info": {
                 "editorName": "_yellowSprite",
@@ -112,23 +112,25 @@
               }
             },
             {
-              "type": "atlas-sprite",
-              "id": "6dcaa0e3-104d-46eb-9c01-710bad9bbdac",
+              "type": "image",
+              "id": "a104b84b-c1c5-4fe9-a469-675e3fffb3b2",
               "asset": "0",
               "info": {
                 "editorName": "_redSprite",
                 "editorField": true,
+                "editorShow": false,
                 "anchor.x": 0.5,
                 "anchor.y": 0.5
               }
             },
             {
-              "type": "atlas-sprite",
-              "id": "35564dee-394e-4572-a160-cbbd3c74a6ec",
+              "type": "image",
+              "id": "dd442332-8a19-442b-b1f3-f0af43414310",
               "asset": "0",
               "info": {
                 "editorName": "_overlaySprite",
                 "editorField": true,
+                "editorShow": false,
                 "anchor.x": 0.5,
                 "anchor.y": 0.5
               }
@@ -143,8 +145,7 @@
     "0": {
       "file": "WebContent/assets/pack.json",
       "section": "playableAssets",
-      "asset": "wordleKeyAtlas",
-      "sprite": "emptyTile.png"
+      "asset": "square"
     },
     "1": {
       "file": "WebContent/assets/pack.json",

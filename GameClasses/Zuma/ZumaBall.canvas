@@ -54,8 +54,8 @@
                 "setAll": [],
                 "children": [
                   {
-                    "type": "image",
-                    "id": "788c3205-3138-4868-802f-ce2dc2fb8a2e",
+                    "type": "atlas-sprite",
+                    "id": "b1ae844f-68e0-465e-afd6-e1d69153f341",
                     "asset": "0",
                     "info": {
                       "editorName": "_baseVisual",
@@ -67,8 +67,8 @@
                     }
                   },
                   {
-                    "type": "image",
-                    "id": "1739ab09-6606-4f72-ae9b-6410a49be01e",
+                    "type": "atlas-sprite",
+                    "id": "6aa319a0-8d50-46a3-9437-9c507faa4d0a",
                     "asset": "1",
                     "info": {
                       "editorName": "_glowVisual",
@@ -80,8 +80,8 @@
                     }
                   },
                   {
-                    "type": "image",
-                    "id": "725b1a0a-2b4f-420f-8d3b-16d6229e1668",
+                    "type": "atlas-sprite",
+                    "id": "a40bebc4-c347-4d9c-be1a-e4189c018057",
                     "asset": "2",
                     "info": {
                       "editorName": "_overlay",
@@ -115,17 +115,20 @@
     "0": {
       "file": "WebContent/assets/pack.json",
       "section": "playableAssets",
-      "asset": "ball_blue"
+      "asset": "helperClassAtlas",
+      "sprite": "ball_blue.png"
     },
     "1": {
       "file": "WebContent/assets/pack.json",
       "section": "playableAssets",
-      "asset": "ball_blue_high"
+      "asset": "helperClassAtlas",
+      "sprite": "ball_blue_high.png"
     },
     "2": {
       "file": "WebContent/assets/pack.json",
       "section": "playableAssets",
-      "asset": "ball_wthigh"
+      "asset": "helperClassAtlas",
+      "sprite": "ball_white.png"
     }
   },
   "prefab-table": {"0": "WebContent/BaseTemplate/webfontGEOText.canvas"}

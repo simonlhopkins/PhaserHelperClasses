@@ -18,7 +18,7 @@
 function BNBBall(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType) {
 	
 	Phaser.Group.call(this, aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType);
-	var __visual = this.game.add.sprite(0.0, 0.0, 'square', null, this);
+	var __visual = this.game.add.sprite(0.0, 0.0, 'helperClassAtlas', 'ball.png', this);
 	__visual.anchor.set(0.5, 0.5);
 	
 	

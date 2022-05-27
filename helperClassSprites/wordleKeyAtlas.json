@@ -1,0 +1,108 @@
+{"frames": [
+
+{
+	"filename": "backspace_icon.png",
+	"frame": {"x":1,"y":1,"w":30,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":30,"h":24},
+	"sourceSize": {"w":30,"h":24}
+},
+{
+	"filename": "emptyTile.png",
+	"frame": {"x":420,"y":1,"w":77,"h":77},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":77,"h":77},
+	"sourceSize": {"w":77,"h":77}
+},
+{
+	"filename": "filledTile.png",
+	"frame": {"x":499,"y":1,"w":77,"h":77},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":77,"h":77},
+	"sourceSize": {"w":77,"h":77}
+},
+{
+	"filename": "grayTile.png",
+	"frame": {"x":578,"y":1,"w":77,"h":77},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":77,"h":77},
+	"sourceSize": {"w":77,"h":77}
+},
+{
+	"filename": "greenTile.png",
+	"frame": {"x":657,"y":1,"w":77,"h":77},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":77,"h":77},
+	"sourceSize": {"w":77,"h":77}
+},
+{
+	"filename": "key_backspace.png",
+	"frame": {"x":33,"y":1,"w":82,"h":73},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":82,"h":73},
+	"sourceSize": {"w":82,"h":73}
+},
+{
+	"filename": "key_enter.png",
+	"frame": {"x":117,"y":1,"w":81,"h":73},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":81,"h":73},
+	"sourceSize": {"w":81,"h":73}
+},
+{
+	"filename": "key_gray.png",
+	"frame": {"x":200,"y":1,"w":53,"h":73},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":53,"h":73},
+	"sourceSize": {"w":53,"h":73}
+},
+{
+	"filename": "key_green.png",
+	"frame": {"x":255,"y":1,"w":53,"h":73},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":53,"h":73},
+	"sourceSize": {"w":53,"h":73}
+},
+{
+	"filename": "key_normal.png",
+	"frame": {"x":310,"y":1,"w":53,"h":73},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":53,"h":73},
+	"sourceSize": {"w":53,"h":73}
+},
+{
+	"filename": "key_yellow.png",
+	"frame": {"x":365,"y":1,"w":53,"h":73},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":53,"h":73},
+	"sourceSize": {"w":53,"h":73}
+},
+{
+	"filename": "yellowTile.png",
+	"frame": {"x":736,"y":1,"w":77,"h":77},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":77,"h":77},
+	"sourceSize": {"w":77,"h":77}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "wordleKeyAtlas.png",
+	"format": "RGBA8888",
+	"size": {"w":814,"h":79},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:7f94d3f4d9f039c6801db78bd28863ac:9fa39dbad00f00bd469e1fdcbdc8468c:2785c1355bedd0a2f13303dae108374a$"
+}
+}

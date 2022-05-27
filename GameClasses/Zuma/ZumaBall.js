@@ -20,13 +20,13 @@ function ZumaBall(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyT
 	Phaser.Group.call(this, aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType);
 	var __bottleParent = this.game.add.group(this);
 	
-	var __baseVisual = this.game.add.sprite(-4.0, -4.0, 'ball_blue', null, __bottleParent);
+	var __baseVisual = this.game.add.sprite(-4.0, -4.0, 'helperClassAtlas', 'ball_blue.png', __bottleParent);
 	__baseVisual.anchor.set(0.5, 0.5);
 	
-	var __glowVisual = this.game.add.sprite(-4.0, -4.0, 'ball_blue_high', null, __bottleParent);
+	var __glowVisual = this.game.add.sprite(-4.0, -4.0, 'helperClassAtlas', 'ball_blue_high.png', __bottleParent);
 	__glowVisual.anchor.set(0.5, 0.5);
 	
-	var __overlay = this.game.add.sprite(-4.0, -4.0, 'ball_wthigh', null, __bottleParent);
+	var __overlay = this.game.add.sprite(-4.0, -4.0, 'helperClassAtlas', 'ball_white.png', __bottleParent);
 	__overlay.anchor.set(0.5, 0.5);
 	
 	var __debugText = new webfontGEOText(this.game, 0.0, 0.0);

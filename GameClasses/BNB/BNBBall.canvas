@@ -45,7 +45,7 @@
           "editorName": "group",
           "setAll": [],
           "children": [{
-            "type": "image",
+            "type": "atlas-sprite",
             "id": "376c7c54-0e85-4a20-9564-05c7b9b0e441",
             "asset": "0",
             "info": {
@@ -63,7 +63,8 @@
   "asset-table": {"0": {
     "file": "WebContent/assets/pack.json",
     "section": "playableAssets",
-    "asset": "square"
+    "asset": "helperClassAtlas",
+    "sprite": "ball.png"
   }},
   "prefab-table": {}
 }
