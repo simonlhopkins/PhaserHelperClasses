@@ -32,6 +32,8 @@ BNBBoard.prototype.getBlock = function(row, col){
 	}
 	return this.blockArr[row][col];
 };
+
+//_stringArr can also be a key of an image that is a pixel version of the board
 BNBBoard.prototype.initializeBoard = function(_stringArr, onComplete){
 	this.stringArr = [];
 	

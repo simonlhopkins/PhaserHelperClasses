@@ -1,5 +1,13 @@
 /**
+
  *
+ */
+/**
+ * _game - reference to the game object
+ * _spiralPoints - an array of points that represent the spiral path
+ * _spawnQueue - an array of objects in the form {letter: X, number: Y}, this can also be anything, just change how the balls initally spawn
+ * _bubbleParent - a Phaser.Group where you want the balls to go when they are travelling on the path
+ * _dragParent - a Phaser.Group where you want the ball to go when it is dragged
  */
 function ZumaBoard (_game, _spiralPoints, _spawnQueue, _bubbleParent, _dragParent) {
 	this.game = _game;
@@ -55,6 +63,7 @@ function ZumaBoard (_game, _spiralPoints, _spawnQueue, _bubbleParent, _dragParen
 	this.onMergeSignal = new Phaser.Signal();
 	this.afterNodeCreateSignal = new Phaser.Signal();
 	
+	//initial spawning here
 	while(this.spawnQueue.length>0){
 		var ballData = this.spawnQueue.shift();
 		var newNode = this.createNode(ballData.letter, ballData.number);
@@ -505,7 +514,6 @@ ZumaBoard.prototype.initRunningState = function(){
 	RUNNING.onUpdate.add(function(){
 		dc.clear();
 		this.distanceTraveled += this.pathSpeed*this.game.time.physicsElapsed;
-		var numUpdated = 0;
 		this.nodeMap.forEach(function(value, key){
 			//saves a little runtime, don't update the balls that are not yet on the path
 			if(value.currentOffset<-this.distanceTraveled){
@@ -520,9 +528,7 @@ ZumaBoard.prototype.initRunningState = function(){
 					this.setNodeToDestroy(value, true, false, true);
 				}
 				return;
-			}
-			numUpdated++;
-			
+			}			
 			value.SM.onUpdate();
 			//offset the collider to be a little behind. I found myself always clicking too far behind since the balls are moving
 			var colliderPos = this.getPositionOnPathDistance(this.distanceTraveled + value.currentOffset - 10);

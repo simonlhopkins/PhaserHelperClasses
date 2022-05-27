@@ -85,8 +85,9 @@ ZumaBall.prototype.initialize = function(_letter, _number){
 	}else{
 		this.numberParent = createShadowText.call(this, this.number, 42);
 	}
-	
-	
+	this.f_bottleParent.bringToTop(this.f_overlay);
+	//change how you want the balls to look, given the arguments here
+	return;
 	switch(this.letter){
 		case "B":
 			this.f_baseVisual.loadTexture("ball_blue");
@@ -112,7 +113,7 @@ ZumaBall.prototype.initialize = function(_letter, _number){
 			break;
 	}
 	
-	this.f_bottleParent.bringToTop(this.f_overlay);
+	
 	
 }
 
