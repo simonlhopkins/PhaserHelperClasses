@@ -129,11 +129,7 @@ BNBBoard.prototype.renderBoard = function(boundsRect, blocksArray, blockFeedback
 };
 
 BNBBoard.prototype.getClosestBlock = function(xPos, yPos){
-//	if(this.is3D){
-//		var perspPos = this.OOPT.transformInverse(xPos, yPos);
-//		xPos = perspPos.x;
-//		yPos = perspPos.y;
-//	}
+
 	var closestCol = Math.floor(Util.unlerp(this.boundsRect.left, this.boundsRect.right, xPos) * this.cols);
 	var closestRow = Math.floor(Util.unlerp(this.boundsRect.top, this.boundsRect.bottom, yPos) * this.rows);
 	closestCol = Phaser.Math.clamp(closestCol, 0, this.cols-1);
@@ -319,7 +315,7 @@ BNBBoard.prototype.moveBall = function(ball, nextMoveLine, maxDist, distSoFar, r
 		if(distSoFar<=maxDist){
 			ball.updatePosition(wallPointForBall.x, wallPointForBall.y);
 			
-			var moveLength = Math.max(15, maxDist - distSoFar);
+			var moveLength = maxDist - distSoFar;
 			var newVelVector = ball.velocity.clone().normalize().multiply(moveLength, moveLength);
 			var newMoveLine = new Phaser.Line(wallPointForBall.x, wallPointForBall.y, wallPointForBall.x + newVelVector.x, wallPointForBall.y + newVelVector.y);
 			return this.moveBall(ball, newMoveLine, maxDist, distSoFar, retArr);
