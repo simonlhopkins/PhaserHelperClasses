@@ -1,0 +1,114 @@
+{
+  "canvas-version": 2,
+  "settings": {
+    "className": "BNBBlock",
+    "sceneWidth": 640,
+    "sceneHeight": 360,
+    "generateOnSave": true,
+    "enableStepping": false,
+    "lang": "JAVA_SCRIPT",
+    "baseClass": "Phaser.Group",
+    "backgroundColor": [
+      180,
+      180,
+      180
+    ],
+    "gridColor": [
+      200,
+      200,
+      200
+    ],
+    "showGrid": true,
+    "create_after": "this.afterCreate();"
+  },
+  "stateSettings": {
+    "stageBackgroundColor": [
+      0,
+      0,
+      0
+    ],
+    "autoLoad": true,
+    "preloadSpriteId": "",
+    "preloadSprite_direction": 0,
+    "load.pack": []
+  },
+  "world": {
+    "type": "group",
+    "id": "59e80506-ac9b-40d5-8dde-d284c125ff4a",
+    "info": {
+      "editorName": "BNBBlock",
+      "setAll": [],
+      "children": [{
+        "type": "group",
+        "id": "0df5ffed-f146-4e7e-bcc3-fa1273d94576",
+        "info": {
+          "editorName": "group",
+          "setAll": [],
+          "children": [{
+            "type": "group",
+            "id": "8d734aea-0d53-4427-8394-3f57700080b9",
+            "info": {
+              "editorName": "_visualParent",
+              "editorField": true,
+              "setAll": [],
+              "children": [
+                {
+                  "type": "image",
+                  "id": "29f86715-73ca-4349-bfa1-71c51dd6f2b5",
+                  "asset": "0",
+                  "info": {
+                    "editorName": "_shadow",
+                    "editorField": true,
+                    "y": 5,
+                    "anchor.x": 0.5,
+                    "anchor.y": 0.5
+                  }
+                },
+                {
+                  "type": "image",
+                  "id": "b312c8da-da93-4fb2-a2bb-91363b03cf6b",
+                  "asset": "0",
+                  "info": {
+                    "editorName": "_visual",
+                    "editorField": true,
+                    "anchor.x": 0.5,
+                    "anchor.y": 0.5
+                  }
+                },
+                {
+                  "type": "image",
+                  "id": "ad70f93b-e39c-4ad8-aba1-02010afab944",
+                  "asset": "0",
+                  "info": {
+                    "editorName": "_flash",
+                    "editorField": true,
+                    "anchor.x": 0.5,
+                    "anchor.y": 0.5
+                  }
+                },
+                {
+                  "type": "image",
+                  "id": "d2c7b09f-f368-4404-b544-6aa30d197e47",
+                  "asset": "0",
+                  "info": {
+                    "editorName": "_highlight",
+                    "editorField": true,
+                    "anchor.x": 0.5,
+                    "anchor.y": 0.5
+                  }
+                }
+              ]
+            }
+          }]
+        }
+      }]
+    }
+  },
+  "type": "GROUP",
+  "asset-table": {"0": {
+    "file": "WebContent/assets/pack.json",
+    "section": "playableAssets",
+    "asset": "square"
+  }},
+  "prefab-table": {}
+}

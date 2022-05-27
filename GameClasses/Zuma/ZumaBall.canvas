@@ -1,0 +1,132 @@
+{
+  "canvas-version": 2,
+  "settings": {
+    "className": "ZumaBall",
+    "sceneWidth": 640,
+    "sceneHeight": 360,
+    "generateOnSave": true,
+    "enableStepping": false,
+    "lang": "JAVA_SCRIPT",
+    "baseClass": "Phaser.Group",
+    "backgroundColor": [
+      180,
+      180,
+      180
+    ],
+    "gridColor": [
+      200,
+      200,
+      200
+    ],
+    "showGrid": true,
+    "create_after": "this.afterCreate();"
+  },
+  "stateSettings": {
+    "stageBackgroundColor": [
+      0,
+      0,
+      0
+    ],
+    "autoLoad": true,
+    "preloadSpriteId": "",
+    "preloadSprite_direction": 0,
+    "load.pack": []
+  },
+  "world": {
+    "type": "group",
+    "id": "1fab0c45-8638-460e-bbe5-d47ae850685f",
+    "info": {
+      "editorName": "ZumaBall",
+      "setAll": [],
+      "children": [{
+        "type": "group",
+        "id": "7fca8f53-ac1c-4c9f-8bcb-e1ecc5f23e7a",
+        "info": {
+          "editorName": "group",
+          "setAll": [],
+          "children": [
+            {
+              "type": "group",
+              "id": "2accbacd-230b-4eb9-a6f5-71a68ef71972",
+              "info": {
+                "editorName": "_bottleParent",
+                "editorField": true,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "image",
+                    "id": "788c3205-3138-4868-802f-ce2dc2fb8a2e",
+                    "asset": "0",
+                    "info": {
+                      "editorName": "_baseVisual",
+                      "editorField": true,
+                      "x": -4,
+                      "y": -4,
+                      "anchor.x": 0.5,
+                      "anchor.y": 0.5
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": "1739ab09-6606-4f72-ae9b-6410a49be01e",
+                    "asset": "1",
+                    "info": {
+                      "editorName": "_glowVisual",
+                      "editorField": true,
+                      "x": -4,
+                      "y": -4,
+                      "anchor.x": 0.5,
+                      "anchor.y": 0.5
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": "725b1a0a-2b4f-420f-8d3b-16d6229e1668",
+                    "asset": "2",
+                    "info": {
+                      "editorName": "_overlay",
+                      "editorField": true,
+                      "x": -4,
+                      "y": -4,
+                      "anchor.x": 0.5,
+                      "anchor.y": 0.5
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "prefab",
+              "prefab": "0",
+              "id": "51795ad8-fd8a-4daa-8720-0bc3ef52c999",
+              "info": {
+                "editorName": "_debugText",
+                "x": 0,
+                "y": 0
+              }
+            }
+          ]
+        }
+      }]
+    }
+  },
+  "type": "GROUP",
+  "asset-table": {
+    "0": {
+      "file": "WebContent/assets/pack.json",
+      "section": "playableAssets",
+      "asset": "ball_blue"
+    },
+    "1": {
+      "file": "WebContent/assets/pack.json",
+      "section": "playableAssets",
+      "asset": "ball_blue_high"
+    },
+    "2": {
+      "file": "WebContent/assets/pack.json",
+      "section": "playableAssets",
+      "asset": "ball_wthigh"
+    }
+  },
+  "prefab-table": {"0": "WebContent/BaseTemplate/webfontGEOText.canvas"}
+}

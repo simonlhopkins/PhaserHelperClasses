@@ -1,0 +1,169 @@
+{
+  "canvas-version": 2,
+  "settings": {
+    "className": "WordleLetterCell",
+    "sceneWidth": 640,
+    "sceneHeight": 360,
+    "generateOnSave": true,
+    "enableStepping": false,
+    "lang": "JAVA_SCRIPT",
+    "baseClass": "Phaser.Group",
+    "backgroundColor": [
+      180,
+      180,
+      180
+    ],
+    "gridColor": [
+      200,
+      200,
+      200
+    ],
+    "showGrid": true,
+    "create_after": "this.afterCreate();\r\nreturn this;"
+  },
+  "stateSettings": {
+    "stageBackgroundColor": [
+      0,
+      0,
+      0
+    ],
+    "autoLoad": true,
+    "preloadSpriteId": "",
+    "preloadSprite_direction": 0,
+    "load.pack": []
+  },
+  "world": {
+    "type": "group",
+    "id": "2c08d873-2da5-4803-95e2-442e2cdd95d7",
+    "info": {
+      "editorName": "WordleLetterCell",
+      "setAll": [],
+      "children": [{
+        "type": "group",
+        "id": "62249870-972e-4bf9-9265-1a30fdfde477",
+        "info": {
+          "editorName": "group",
+          "setAll": [],
+          "children": [
+            {
+              "type": "atlas-sprite",
+              "id": "f7aab79b-68e8-4b59-91ce-ba82f2f85f66",
+              "asset": "0",
+              "info": {
+                "editorName": "_emptySprite",
+                "editorField": true,
+                "anchor.x": 0.5,
+                "anchor.y": 0.5
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "fc5851a7-e754-466e-9ec0-3a10941160ff",
+              "asset": "0",
+              "info": {
+                "editorName": "_emptyGlowSprite",
+                "editorField": true,
+                "anchor.x": 0.5,
+                "anchor.y": 0.5
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "73d36ee0-3abc-4d53-8ac2-7242dc275c48",
+              "asset": "0",
+              "info": {
+                "editorName": "_lightGraySprite",
+                "editorField": true,
+                "anchor.x": 0.5,
+                "anchor.y": 0.5
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "e3be7984-c214-4520-a1f4-cd5cab11cd1f",
+              "asset": "1",
+              "info": {
+                "editorName": "_graySprite",
+                "editorField": true,
+                "anchor.x": 0.5,
+                "anchor.y": 0.5
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "5ad0b221-7840-48b2-ba02-5bfc59f81b09",
+              "asset": "2",
+              "info": {
+                "editorName": "_greenSprite",
+                "editorField": true,
+                "anchor.x": 0.5,
+                "anchor.y": 0.5
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "e384cccb-7de3-4491-bffd-a6483701e14c",
+              "asset": "3",
+              "info": {
+                "editorName": "_yellowSprite",
+                "editorField": true,
+                "anchor.x": 0.5,
+                "anchor.y": 0.5
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "6dcaa0e3-104d-46eb-9c01-710bad9bbdac",
+              "asset": "0",
+              "info": {
+                "editorName": "_redSprite",
+                "editorField": true,
+                "anchor.x": 0.5,
+                "anchor.y": 0.5
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "35564dee-394e-4572-a160-cbbd3c74a6ec",
+              "asset": "0",
+              "info": {
+                "editorName": "_overlaySprite",
+                "editorField": true,
+                "anchor.x": 0.5,
+                "anchor.y": 0.5
+              }
+            }
+          ]
+        }
+      }]
+    }
+  },
+  "type": "GROUP",
+  "asset-table": {
+    "0": {
+      "file": "WebContent/assets/pack.json",
+      "section": "playableAssets",
+      "asset": "wordleKeyAtlas",
+      "sprite": "emptyTile.png"
+    },
+    "1": {
+      "file": "WebContent/assets/pack.json",
+      "section": "playableAssets",
+      "asset": "wordleKeyAtlas",
+      "sprite": "grayTile.png"
+    },
+    "2": {
+      "file": "WebContent/assets/pack.json",
+      "section": "playableAssets",
+      "asset": "wordleKeyAtlas",
+      "sprite": "greenTile.png"
+    },
+    "3": {
+      "file": "WebContent/assets/pack.json",
+      "section": "playableAssets",
+      "asset": "wordleKeyAtlas",
+      "sprite": "yellowTile.png"
+    }
+  },
+  "prefab-table": {}
+}
