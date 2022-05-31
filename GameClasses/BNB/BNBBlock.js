@@ -99,14 +99,14 @@ BNBBlock.prototype.initialize = function(assocBoard, colliderBounds, visualBound
 	this.highlightColor = 0xf92ef3;
 	this.f_visual.tint = this.baseColor;
 	
-	this.setHealth(600);
+	this.setHealth(20);
 	
 	if(lum>200){
 		this.healthText.tint =0x000000;
 	}
 	this.f_shadow.alpha = 0;
 	this.worldPosition = this.parent.worldTransform.apply(this.position);
-	this.healthText.resizeInRect(this.collider.clone().inflate(-5, -5));
+	this.healthText.resizeInRect(this.visualBounds.clone().scale(0.8,0.8));
 
 
 };

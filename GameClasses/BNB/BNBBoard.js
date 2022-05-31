@@ -76,10 +76,10 @@ BNBBoard.prototype.initializeBoard = function(_stringArr, onComplete){
 	var prevRCenter = this.rightBound.midPoint();
 	this.leftBound = this.leftBound.rotateAround(this.leftBound.start.x, this.leftBound.start.y, perspectiveAngle, true);
 	this.leftBound = new Phaser.Line().fromAngle(this.leftBound.start.x, this.leftBound.start.y, this.leftBound.angle, this.leftBound.length*perspectiveSizeMod);
-	this.leftBound.centerOn(prevLCenter.x, prevLCenter.y);
+	//this.leftBound.centerOn(prevLCenter.x, prevLCenter.y);
 	this.rightBound = this.rightBound.rotateAround(this.rightBound.start.x, this.rightBound.start.y, -perspectiveAngle, true);
 	this.rightBound = new Phaser.Line().fromAngle( this.rightBound.start.x, this.rightBound.start.y, this.rightBound.angle, this.rightBound.length*perspectiveSizeMod);
-	this.rightBound.centerOn(prevRCenter.x, prevRCenter.y);
+	//this.rightBound.centerOn(prevRCenter.x, prevRCenter.y);
 	
 	var sourceRect = this.boundsRect;
 	var destPoly = new Phaser.Polygon(this.leftBound.end, this.rightBound.end, this.rightBound.start, this.leftBound.start);
@@ -235,7 +235,6 @@ BNBBoard.prototype.moveBall = function(ball, nextMoveLine, maxDist, distSoFar, r
 	if(this.is3D){
 		if(!this.ballBounceBounds.contains(ball.position.x, ball.position.y)){
 			console.log("out of bounds");
-			
 		}
 	}
 	//this.dc.drawLine(nextMoveLine);
@@ -262,8 +261,12 @@ BNBBoard.prototype.moveBall = function(ball, nextMoveLine, maxDist, distSoFar, r
 
 			}
 		}
-		
-		foundCollision = foundCollision||this.getGameBoundsIntersection(nextMoveLine);
+		if(this.is3D){
+			if(!this.ballBounceBounds.contains(ball.position.x, ball.position.y)){
+				foundCollision = this.getGameBoundsIntersection(nextMoveLine);
+			}
+		}
+		//foundCollision = foundCollision||this.getGameBoundsIntersection(nextMoveLine);
 		if(foundCollision){
 			hitWall = true;
 		}
