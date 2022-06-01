@@ -107,17 +107,26 @@ BNBBoard.prototype.renderBoard = function(boundsRect, blocksArray, blockFeedback
 			var newBlock = new BNBBlock(this.game, this.blockParent);
 			var colliderBounds = new Phaser.Rectangle(0,0,this.blockWidth, this.blockHeight).centerOn(xPos, yPos);
 			var visualBounds = colliderBounds.clone();
+			var shadowBounds = colliderBounds.clone();
 			if(this.is3D){
+				
+				
 				var perspTop = this.OOPT.transform(xPos, yPos - this.blockHeight/2);
 				var perspBot = this.OOPT.transform(xPos, yPos + this.blockHeight/2);
 				var perspLeft = this.OOPT.transform(xPos - this.blockWidth/2, yPos);
 				var perspRight = this.OOPT.transform(xPos + this.blockWidth/2, yPos);
 				var perspPos = this.OOPT.transform(xPos, yPos);
+				
 				visualBounds.setTo(0,0,perspRight.x - perspLeft.x, perspBot.y - perspTop.y).centerOn(perspPos.x, perspPos.y);
+				
 				
 			}
 			
 			newBlock.initialize(this, colliderBounds ,visualBounds, rowArr[col], blockFeedbackParticleQueue);
+			if(this.is3D){
+				var shadowPos = this.OOPT.transform(xPos, yPos+ 10);
+				newBlock.initShadow(visualBounds.clone().centerOn(shadowPos.x, shadowPos.y), this.shadowParent);
+			}
 			newBlock.row = row;
 			newBlock.col = col;
 			this.maxPoints += newBlock.health;
@@ -233,15 +242,16 @@ BNBBoard.prototype.moveBall = function(ball, nextMoveLine, maxDist, distSoFar, r
 	var foundCollision = this.getBlockIntersection(nextMoveLine, closestRow, closestCol);
 	
 	if(this.is3D){
-		if(!this.ballBounceBounds.contains(ball.position.x, ball.position.y)){
-			console.log("out of bounds");
-		}
+		
 	}
-	//this.dc.drawLine(nextMoveLine);
+	
 	var hitWall = false;
 	if(!foundCollision){
 		
 		if(this.is3D){
+			if(!this.ballBounceBounds.contains(ball.position.x, ball.position.y)){
+				foundCollision = this.getGameBoundsIntersection(nextMoveLine);
+			}
 			//recreate the move line in 3D perspective to see if it intersects the 2D wall
 			var perspStart = this.OOPT.transform(nextMoveLine.start);
 			var perspEnd = this.OOPT.transform(nextMoveLine.end);
@@ -249,7 +259,6 @@ BNBBoard.prototype.moveBall = function(ball, nextMoveLine, maxDist, distSoFar, r
 			var perspectiveCollision = this.getGameBoundsIntersection(wallCheckLine);
 			//idealy, we wouldn't do this since we actually do want the walls to be treated in perspective as well, but oh well
 			if(perspectiveCollision){
-				//this.dc.drawLine(wallCheckLine);
 				//if it does, make a fake wall for the 2D collision to happen, where the collision happened in 3D space
 				var _2DWallPos = this.OOPT.transformInverse(perspectiveCollision.i1.point);
 				var fakeWall = perspectiveCollision.i1.side.clone();
@@ -257,15 +266,14 @@ BNBBoard.prototype.moveBall = function(ball, nextMoveLine, maxDist, distSoFar, r
 				fakeWall.centerOn(_2DWallPos.x, _2DWallPos.y);
 				foundCollision = {
 						i1: {point: nextMoveLine.intersects(fakeWall), side: fakeWall}
-				};
+				} || foundCollision;
+				
 
 			}
+		}else{
+			foundCollision = this.getGameBoundsIntersection(nextMoveLine);
 		}
-		if(this.is3D){
-			if(!this.ballBounceBounds.contains(ball.position.x, ball.position.y)){
-				foundCollision = this.getGameBoundsIntersection(nextMoveLine);
-			}
-		}
+		
 		//foundCollision = foundCollision||this.getGameBoundsIntersection(nextMoveLine);
 		if(foundCollision){
 			hitWall = true;
@@ -285,7 +293,6 @@ BNBBoard.prototype.moveBall = function(ball, nextMoveLine, maxDist, distSoFar, r
 		}
 		ball.velocity = new Phaser.Point(Math.cos(reflectedRad) * ball.velocity.getMagnitude(), Math.sin(reflectedRad) * ball.velocity.getMagnitude());
 		var startPos = nextMoveLine.start;
-		
 		var wallPointForBall = new Phaser.Point(foundCollision.i1.point.x, foundCollision.i1.point.y);
 		var offsetFromWallOnBounce = ball.collider.radius;
 
@@ -380,8 +387,6 @@ BNBBoard.prototype.getGameBoundsIntersection = function(line){
 				}
 				break;
 		}
-		
-		
 		return Util.getLineRectIntersection(line, this.ballBounceBounds);
 	}
 	else if(this.ballBounceBounds instanceof Phaser.Polygon){

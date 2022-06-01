@@ -116,11 +116,11 @@ BNBBlock.prototype.setHealth = function(newHealth){
 	this.healthText.setText(this.health.toString());
 };
 
-BNBBlock.prototype.initShadow = function(xPos, yPos, width, height, parent){
+BNBBlock.prototype.initShadow = function(visualBounds, parent){
 	this.f_shadow.alpha = 1;
-	this.f_shadow.position.setTo(xPos, yPos);
-	this.f_shadow.width = width;
-	this.f_shadow.height = height;
+	this.f_shadow.position.setTo(visualBounds.centerX, visualBounds.centerY);
+	this.f_shadow.width = visualBounds.width;
+	this.f_shadow.height = visualBounds.height;
 	this.baseShadowColor = "0x"+ Util.LightenDarkenColor(this.baseColor.toString(), -50);
 	this.highlightShadowColor = "0x"+ Util.LightenDarkenColor(this.highlightColor.toString(), -50);
 	this.f_shadow.tint = this.baseShadowColor;

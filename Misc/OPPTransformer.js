@@ -11,6 +11,11 @@ function OPPTransformer (_game, _sourceRect, _destPolygon) {
 	                   this.sourceRect.right, this.sourceRect.bottom, this.sourceRect.left, this.sourceRect.bottom];
 	var dstCorners = this.destPolygon.toNumberArray();
 	this.perspT = PerspT(srcCorners, dstCorners);
+	this.dc.lineStyle(4, 0xff0000);
+	this.dc.drawShape(this.sourceRect);
+	this.dc.lineStyle(4, 0xff00ff);
+	var visualPoly = new Phaser.Polygon(this.destPolygon.points.concat(this.destPolygon.points[0]))
+	this.dc.drawShape(visualPoly);
 	
 }
 
