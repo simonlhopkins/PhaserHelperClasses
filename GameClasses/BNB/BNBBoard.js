@@ -2,22 +2,18 @@
 
 //BNB Board
 
-function BNBBoard(_game, _scene, _backingSprite, _blockParent, _shadowParent, _fxParent, _is3D, _ballBounceBounds){
+function BNBBoard(_game, _boundsRect, _blockParent, _shadowParent, _fxParent, _is3D, _ballBounceBounds){
 	
 	this.game = _game;
-	this.scene =_scene;
-	this.backingSprite = _backingSprite;
 	this.blockParent = _blockParent;
 	this.shadowParent = _shadowParent;
 	this.fxParent = _fxParent;
-	this.boundsRect = new Phaser.Rectangle().copyFrom(this.backingSprite);
+	this.boundsRect = _boundsRect;
 	this.dc = this.game.add.graphics(0,0);
-	this.boundsRect.centerOn(this.backingSprite.centerX, this.backingSprite.centerY);
 	this.stringArr = [];
 	this.blockArr = [];
 	this.rows = 0;
 	this.cols = 0;
-	this.backingSprite.alpha = 0;
 	this.dc.lineStyle(5, Util.vibesColor());
 	
 	this.maxPoints = 0;
@@ -38,7 +34,7 @@ BNBBoard.prototype.initializeBoard = function(_stringArr, onComplete){
 	this.stringArr = [];
 	
 	var blockFeedbackQueue = new ParticleQueue(this.game, this.fxParent);
-	blockFeedbackQueue.initParticles(["Daisy"], 50);
+	blockFeedbackQueue.initParticles([""], 50);
 	
 	if(typeof(_stringArr) == 'string'){
 		this.stringArr = this.getImgData(_stringArr, this.pixelCallBack, this);
@@ -63,8 +59,8 @@ BNBBoard.prototype.initializeBoard = function(_stringArr, onComplete){
 	blockHeight = blockWidth;
 	this.blockWidth = blockWidth;
 	this.blockHeight= blockHeight;
-	this.boundsRect.setTo(0,0,blockWidth*this.cols, blockHeight*this.rows);
-	this.boundsRect.centerOn(this.backingSprite.centerX, this.backingSprite.centerY);
+	var prevCenter= new Phaser.Point(this.boundsRect.centerX, this.boundsRect.centerY);
+	this.boundsRect.setTo(0,0,blockWidth*this.cols, blockHeight*this.rows).centerOn(prevCenter.x, prevCenter.y);
 	
 	
 	

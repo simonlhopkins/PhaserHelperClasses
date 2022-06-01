@@ -65,7 +65,7 @@ BNBBlock.prototype.afterCreate = function(){
 	this.onDestroySignal.add(this.onBlockDestroy, this);
 	this.f_highlight.alpha = 0;
 	this.health = 999;
-	this.healthText = new Phaser.BitmapText(this.game, 0,0, "Futura", this.health.toString(), 64);
+	this.healthText = new Phaser.BitmapText(this.game, 0,0, "KeepCalm", this.health.toString(), 64);
 	this.healthText.anchor.setTo(0.5);
 	this.row = -1;
 	this.col = -1;
