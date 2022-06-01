@@ -46,7 +46,7 @@
           "setAll": [],
           "children": [
             {
-              "type": "image",
+              "type": "atlas-sprite",
               "id": "974421f3-bb32-41fb-a600-f108942af2c6",
               "asset": "0",
               "info": {
@@ -57,7 +57,7 @@
               }
             },
             {
-              "type": "image",
+              "type": "atlas-sprite",
               "id": "24069677-3309-407f-9fc6-ed024c3991f8",
               "asset": "0",
               "info": {
@@ -68,7 +68,7 @@
               }
             },
             {
-              "type": "image",
+              "type": "atlas-sprite",
               "id": "7ec606a6-228d-493b-9fb1-7940504ccce1",
               "asset": "0",
               "info": {
@@ -112,7 +112,7 @@
               }
             },
             {
-              "type": "image",
+              "type": "atlas-sprite",
               "id": "a104b84b-c1c5-4fe9-a469-675e3fffb3b2",
               "asset": "0",
               "info": {
@@ -124,7 +124,7 @@
               }
             },
             {
-              "type": "image",
+              "type": "atlas-sprite",
               "id": "dd442332-8a19-442b-b1f3-f0af43414310",
               "asset": "0",
               "info": {
@@ -145,7 +145,8 @@
     "0": {
       "file": "WebContent/assets/pack.json",
       "section": "playableAssets",
-      "asset": "square"
+      "asset": "wordleKeyAtlas",
+      "sprite": "emptyTile.png"
     },
     "1": {
       "file": "WebContent/assets/pack.json",

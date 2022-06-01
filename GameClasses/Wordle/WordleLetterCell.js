@@ -18,13 +18,13 @@
 function WordleLetterCell(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType) {
 	
 	Phaser.Group.call(this, aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType);
-	var __emptySprite = this.game.add.sprite(0.0, 0.0, 'square', null, this);
+	var __emptySprite = this.game.add.sprite(0.0, 0.0, 'wordleKeyAtlas', 'emptyTile.png', this);
 	__emptySprite.anchor.set(0.5, 0.5);
 	
-	var __emptyGlowSprite = this.game.add.sprite(0.0, 0.0, 'square', null, this);
+	var __emptyGlowSprite = this.game.add.sprite(0.0, 0.0, 'wordleKeyAtlas', 'emptyTile.png', this);
 	__emptyGlowSprite.anchor.set(0.5, 0.5);
 	
-	var __lightGraySprite = this.game.add.sprite(0.0, 0.0, 'square', null, this);
+	var __lightGraySprite = this.game.add.sprite(0.0, 0.0, 'wordleKeyAtlas', 'emptyTile.png', this);
 	__lightGraySprite.anchor.set(0.5, 0.5);
 	
 	var __graySprite = this.game.add.sprite(0.0, 0.0, 'wordleKeyAtlas', 'grayTile.png', this);
@@ -36,10 +36,10 @@ function WordleLetterCell(aGame, aParent, aName, aAddToStage, aEnableBody, aPhys
 	var __yellowSprite = this.game.add.sprite(0.0, 0.0, 'wordleKeyAtlas', 'yellowTile.png', this);
 	__yellowSprite.anchor.set(0.5, 0.5);
 	
-	var __redSprite = this.game.add.sprite(0.0, 0.0, 'square', null, this);
+	var __redSprite = this.game.add.sprite(0.0, 0.0, 'wordleKeyAtlas', 'emptyTile.png', this);
 	__redSprite.anchor.set(0.5, 0.5);
 	
-	var __overlaySprite = this.game.add.sprite(0.0, 0.0, 'square', null, this);
+	var __overlaySprite = this.game.add.sprite(0.0, 0.0, 'wordleKeyAtlas', 'emptyTile.png', this);
 	__overlaySprite.anchor.set(0.5, 0.5);
 	
 	
