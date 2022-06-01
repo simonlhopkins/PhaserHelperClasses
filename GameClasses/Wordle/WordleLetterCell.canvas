@@ -59,7 +59,7 @@
             {
               "type": "atlas-sprite",
               "id": "24069677-3309-407f-9fc6-ed024c3991f8",
-              "asset": "0",
+              "asset": "1",
               "info": {
                 "editorName": "_emptyGlowSprite",
                 "editorField": true,
@@ -81,12 +81,13 @@
             {
               "type": "atlas-sprite",
               "id": "bd840cc1-06cd-4ddc-a9c5-d5b994c4964d",
-              "asset": "1",
+              "asset": "2",
               "info": {
                 "editorName": "_graySprite",
                 "editorField": true,
                 "anchor.x": 0.5,
-                "anchor.y": 0.5
+                "anchor.y": 0.5,
+                "tint": "0x3a3a3c"
               }
             },
             {
@@ -97,24 +98,26 @@
                 "editorName": "_greenSprite",
                 "editorField": true,
                 "anchor.x": 0.5,
-                "anchor.y": 0.5
+                "anchor.y": 0.5,
+                "tint": "0x5a8d4b"
               }
             },
             {
               "type": "atlas-sprite",
               "id": "bb4d76e2-cf59-43f6-b206-feaf3eb47f02",
-              "asset": "3",
+              "asset": "2",
               "info": {
                 "editorName": "_yellowSprite",
                 "editorField": true,
                 "anchor.x": 0.5,
-                "anchor.y": 0.5
+                "anchor.y": 0.5,
+                "tint": "0xb29f31"
               }
             },
             {
               "type": "atlas-sprite",
               "id": "a104b84b-c1c5-4fe9-a469-675e3fffb3b2",
-              "asset": "0",
+              "asset": "2",
               "info": {
                 "editorName": "_redSprite",
                 "editorField": true,
@@ -126,7 +129,7 @@
             {
               "type": "atlas-sprite",
               "id": "dd442332-8a19-442b-b1f3-f0af43414310",
-              "asset": "0",
+              "asset": "2",
               "info": {
                 "editorName": "_overlaySprite",
                 "editorField": true,
@@ -145,26 +148,20 @@
     "0": {
       "file": "WebContent/assets/pack.json",
       "section": "playableAssets",
-      "asset": "wordleKeyAtlas",
-      "sprite": "emptyTile.png"
+      "asset": "WRDAtlas",
+      "sprite": "empty.png"
     },
     "1": {
       "file": "WebContent/assets/pack.json",
       "section": "playableAssets",
-      "asset": "wordleKeyAtlas",
-      "sprite": "grayTile.png"
+      "asset": "WRDAtlas",
+      "sprite": "empty glow.png"
     },
     "2": {
       "file": "WebContent/assets/pack.json",
       "section": "playableAssets",
-      "asset": "wordleKeyAtlas",
-      "sprite": "greenTile.png"
-    },
-    "3": {
-      "file": "WebContent/assets/pack.json",
-      "section": "playableAssets",
-      "asset": "wordleKeyAtlas",
-      "sprite": "yellowTile.png"
+      "asset": "WRDAtlas",
+      "sprite": "tile.png"
     }
   },
   "prefab-table": {}

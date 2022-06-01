@@ -42,7 +42,7 @@ StateMachine.prototype.changeState = function(stateKey, data){
 	data = data==undefined?{}:data;
 	data.prevState = this.currentState;
 	if(this.currentState && !this.currentState.isTransition){
-		this.currentState.onExit.dispatch();
+		this.currentState.onExit.dispatch(data);
 		this.currentState.enterFired = false;
 
 	}

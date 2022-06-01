@@ -18,28 +18,31 @@
 function WordleLetterCell(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType) {
 	
 	Phaser.Group.call(this, aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType);
-	var __emptySprite = this.game.add.sprite(0.0, 0.0, 'wordleKeyAtlas', 'emptyTile.png', this);
+	var __emptySprite = this.game.add.sprite(0.0, 0.0, 'WRDAtlas', 'empty.png', this);
 	__emptySprite.anchor.set(0.5, 0.5);
 	
-	var __emptyGlowSprite = this.game.add.sprite(0.0, 0.0, 'wordleKeyAtlas', 'emptyTile.png', this);
+	var __emptyGlowSprite = this.game.add.sprite(0.0, 0.0, 'WRDAtlas', 'empty glow.png', this);
 	__emptyGlowSprite.anchor.set(0.5, 0.5);
 	
-	var __lightGraySprite = this.game.add.sprite(0.0, 0.0, 'wordleKeyAtlas', 'emptyTile.png', this);
+	var __lightGraySprite = this.game.add.sprite(0.0, 0.0, 'WRDAtlas', 'empty.png', this);
 	__lightGraySprite.anchor.set(0.5, 0.5);
 	
-	var __graySprite = this.game.add.sprite(0.0, 0.0, 'wordleKeyAtlas', 'grayTile.png', this);
+	var __graySprite = this.game.add.sprite(0.0, 0.0, 'WRDAtlas', 'tile.png', this);
 	__graySprite.anchor.set(0.5, 0.5);
+	__graySprite.tint = 0x3a3a3c;
 	
-	var __greenSprite = this.game.add.sprite(0.0, 0.0, 'wordleKeyAtlas', 'greenTile.png', this);
+	var __greenSprite = this.game.add.sprite(0.0, 0.0, 'WRDAtlas', 'tile.png', this);
 	__greenSprite.anchor.set(0.5, 0.5);
+	__greenSprite.tint = 0x5a8d4b;
 	
-	var __yellowSprite = this.game.add.sprite(0.0, 0.0, 'wordleKeyAtlas', 'yellowTile.png', this);
+	var __yellowSprite = this.game.add.sprite(0.0, 0.0, 'WRDAtlas', 'tile.png', this);
 	__yellowSprite.anchor.set(0.5, 0.5);
+	__yellowSprite.tint = 0xb29f31;
 	
-	var __redSprite = this.game.add.sprite(0.0, 0.0, 'wordleKeyAtlas', 'emptyTile.png', this);
+	var __redSprite = this.game.add.sprite(0.0, 0.0, 'WRDAtlas', 'tile.png', this);
 	__redSprite.anchor.set(0.5, 0.5);
 	
-	var __overlaySprite = this.game.add.sprite(0.0, 0.0, 'wordleKeyAtlas', 'emptyTile.png', this);
+	var __overlaySprite = this.game.add.sprite(0.0, 0.0, 'WRDAtlas', 'tile.png', this);
 	__overlaySprite.anchor.set(0.5, 0.5);
 	
 	
