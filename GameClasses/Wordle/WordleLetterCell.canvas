@@ -47,7 +47,7 @@
           "children": [
             {
               "type": "atlas-sprite",
-              "id": "974421f3-bb32-41fb-a600-f108942af2c6",
+              "id": "d59e524c-3d5a-473b-b304-19b9f144b9d0",
               "asset": "0",
               "info": {
                 "editorName": "_emptySprite",
@@ -58,8 +58,8 @@
             },
             {
               "type": "atlas-sprite",
-              "id": "24069677-3309-407f-9fc6-ed024c3991f8",
-              "asset": "1",
+              "id": "ebccbdb2-a093-4418-8f4c-d0f72cf18260",
+              "asset": "0",
               "info": {
                 "editorName": "_emptyGlowSprite",
                 "editorField": true,
@@ -69,7 +69,7 @@
             },
             {
               "type": "atlas-sprite",
-              "id": "7ec606a6-228d-493b-9fb1-7940504ccce1",
+              "id": "520038a8-5193-4bb3-b6ae-59aefbfdd92c",
               "asset": "0",
               "info": {
                 "editorName": "_lightGraySprite",
@@ -80,8 +80,8 @@
             },
             {
               "type": "atlas-sprite",
-              "id": "bd840cc1-06cd-4ddc-a9c5-d5b994c4964d",
-              "asset": "2",
+              "id": "c0b06bf2-8542-45bc-a51e-d669f06f4389",
+              "asset": "1",
               "info": {
                 "editorName": "_graySprite",
                 "editorField": true,
@@ -92,7 +92,7 @@
             },
             {
               "type": "atlas-sprite",
-              "id": "7f80a1c1-a62f-4302-beb8-4794b6669aaa",
+              "id": "8982a318-e84c-492f-a6a8-f8f00c467739",
               "asset": "2",
               "info": {
                 "editorName": "_greenSprite",
@@ -104,8 +104,8 @@
             },
             {
               "type": "atlas-sprite",
-              "id": "bb4d76e2-cf59-43f6-b206-feaf3eb47f02",
-              "asset": "2",
+              "id": "d6cbc8df-913c-44da-89ed-d6e60867acd1",
+              "asset": "3",
               "info": {
                 "editorName": "_yellowSprite",
                 "editorField": true,
@@ -116,8 +116,8 @@
             },
             {
               "type": "atlas-sprite",
-              "id": "a104b84b-c1c5-4fe9-a469-675e3fffb3b2",
-              "asset": "2",
+              "id": "8d7c1cae-53f0-4ce5-aa86-e26defe7c24b",
+              "asset": "0",
               "info": {
                 "editorName": "_redSprite",
                 "editorField": true,
@@ -128,8 +128,8 @@
             },
             {
               "type": "atlas-sprite",
-              "id": "dd442332-8a19-442b-b1f3-f0af43414310",
-              "asset": "2",
+              "id": "ce6d0be1-80aa-4c4b-a9b6-4d81c9043750",
+              "asset": "0",
               "info": {
                 "editorName": "_overlaySprite",
                 "editorField": true,
@@ -148,20 +148,26 @@
     "0": {
       "file": "WebContent/assets/pack.json",
       "section": "playableAssets",
-      "asset": "WRDAtlas",
-      "sprite": "empty.png"
+      "asset": "wordleKeyAtlas",
+      "sprite": "emptyTile.png"
     },
     "1": {
       "file": "WebContent/assets/pack.json",
       "section": "playableAssets",
-      "asset": "WRDAtlas",
-      "sprite": "empty glow.png"
+      "asset": "wordleKeyAtlas",
+      "sprite": "grayTile.png"
     },
     "2": {
       "file": "WebContent/assets/pack.json",
       "section": "playableAssets",
-      "asset": "WRDAtlas",
-      "sprite": "tile.png"
+      "asset": "wordleKeyAtlas",
+      "sprite": "greenTile.png"
+    },
+    "3": {
+      "file": "WebContent/assets/pack.json",
+      "section": "playableAssets",
+      "asset": "wordleKeyAtlas",
+      "sprite": "yellowTile.png"
     }
   },
   "prefab-table": {}
